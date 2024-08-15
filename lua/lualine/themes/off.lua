@@ -1,6 +1,6 @@
 -- off.lua: Lualine theme for the Off colorscheme
 
-local config = require('off.config')
+-- local config = require('off.config')
 local off = {}
 local colors = {}
 
