@@ -1,13 +1,14 @@
 local M = {}
 
-local lazy = setmetatable({}, {
-    __index = function(_, key)
-        return require('off.' .. key)
-    end
-})
+-- local lazy = setmetatable({}, {
+--     __index = function(_, key)
+--         return require('off.' .. key)
+--     end
+-- })
 
 function M.setup(opts)
-    lazy.config.setup(opts)
+    local config = require('off.config')
+    config.setup(opts)
 end
 
 function M.load()
