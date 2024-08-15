@@ -2,6 +2,7 @@ local M = {}
 
 M.options = {
     colors_off_a_little = false,
+    transparent_background = false,
     -- Add other configurable options here
 }
 
